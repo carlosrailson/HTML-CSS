@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+h1,
+h2,
+p,
+li,
+ul,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 990px;
+  margin: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.menu nav ul {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li a {
+  background-color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1c75bc;
+  font-family: Arial;
+}
+
+nav .active a,
+nav ul li a:hover {
+  background-color: #1c75bc;
+  color: #fff;
+}
+
+.banner {
+  background-image: url(../images/dentista-capa.jpg);
+  background-size: cover;
+  height: 620px;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  flex: 1;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-family: Arial;
+}
+
+.area-title {
+  width: 40%;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
+}
+
+.title h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.title p {
+  font-size: 20px;
+}
+
+.infos {
+  display: flex;
+  height: 200px;
+}
+
+.infos h2 {
+  font-size: 20px;
+}
+
+.infos p {
+  font-size: 14px;
+}
+
+.info1,
+.info2,
+.info3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.info1 {
+  background-color: #1c75bc;
+}
+
+.info2 {
+  background-color: #17598f;
+}
+
+.info3 {
+  background-color: #114066;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: max-content;
+  padding: 5px;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #114066;
+}
+
+.info3-horarios {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+}
