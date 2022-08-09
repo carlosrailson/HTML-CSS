@@ -6,176 +6,208 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Carlos Railson">
-  <meta name="description" content="descrição do site vai aqui">
+  <meta name="description"
+    content="A sua melhor experiência. Fazendo você realizar o sonho de ter o sorriso perfeiro que sempre quis.">
   <meta name="keywords" content="site, do dentista, consultório">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-  <title>Document</title>
+  <title>Site do Dentista</title>
 </head>
 
 <body>
-  <header class="container">
-    <div class="header-container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="./assets/images/logo-do-dentista.png" alt="Logotipo do dentista">
-        </a>
-      </div>
-      <div class="menu">
-        <nav>
-          <ul>
-            <li class="active"><a href="#">Início</a></li>
-            <li><a href="#">História</a></li>
-            <li><a href="#">Planos</a></li>
-            <li><a href="#">Consultas</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
+  <header>
+    <div class="container">
+      <div class="navegation">
+        <div class="logo">
+          Logo do Dentista
+        </div>
+        <div>
+          <nav>
+            <ul class="menu">
+              <li><a href="#" id="active">Início</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Departamentos</a></li>
+              <li><a href="#">Horários</a></li>
+              <li><a href="#">Horários</a></li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
-  <section class="banner">
-    <div class="container banner-container">
-      <div class="title">
-        <div class="area-title">
-          <h1>A sua melhor experiência</h1>
-          <p>Nossa missão é multiplicar os sorrisos através da qualidade do nosso serviço.</p>
+  <section>
+    <div class="banner">
+      <div class="container banner-content">
+        <div class="title">
+          <h1>A sua melhor<br>
+            experiência.
+          </h1>
+          <p>
+            Fazendo você realizar o sonho de<br>
+            ter o sorriso perfeiro que sempre quis.
+          </p>
         </div>
-      </div>
-      <div class="infos">
-        <div class="info1">
-          <h2>Casos de Emergência</h2>
-          <p>Temos médicos de plantão para atender sempre que hover imprevistos, sem cobrar nada.</p>
-          <button>Saiba mais</button>
-        </div>
-        <div class="info2">
-          <h2>Os melhores Dentistas</h2>
-          <p>Aqui você terá os melhores ortodontistas a sua disposição, para garantir a sua confiança.</p>
-          <button>Saiba mais</button>
-        </div>
-        <div class="info3">
-          <h2>Horários</h2>
-          <div class="info3-horarios">
-            <p>Segunda a Sexa</p>
-            <p>08:00 - 17:00</p>
+        <div class="info">
+          <div class="info-content-1">
+            <div class="info-description-title">Casos de Emergencia</div>
+            <div class="info-description-text">
+              <p>
+                Se você precisar de um doutor urgente fora de nosso horário de funcionamento, basta ligar para a nossa
+                central de atendimento e informar o seu caso.
+              </p>
+            </div>
+            <a href="#" class="info-description-link">Saiba mais
+            </a>
           </div>
-          <div class="info3-horarios">
-            <p>Sábado</p>
-            <p>10:00 - 17:00</p>
+          <div class="info-content-2">
+            <div class="info-description-title">Horário dos Médicos</div>
+            <div class="info-description-text">
+              <p>
+                Em nossa clinica, nós temos lista de doutores individuais. Clique em
+                Saiba mais para ver os serviços e o horário dos dentistas.
+              </p>
+            </div>
+            <a href="#" class="info-description-link">Saiba mais</a>
           </div>
-          <div class="info3-horarios">
-            <p>Domingo</p>
-            <p>10:00 - 14:00</p>
+          <div class="info-content-3">
+            <div class="info-description-title">Horário de Funcionamento</div>
+            <div class="timetable">
+              <div class="timetable-description">
+                <div>Segunda a sexta</div>
+                <div>8:00 - 17:00</div>
+              </div>
+              <div class="timetable-description">
+                <div>Sábado</div>
+                <div>9:30 - 17:00</div>
+              </div>
+              <div class="timetable-description">
+                <div>Domingo</div>
+                <div>9:90 - 15:00</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <section>
-    <div class="container geral-container">
-      <section class="blogs">
-        <h3>Ultimas Notícias</h3>
-        <div class="ultimas-container">
-          <section class="ultimas-noticias">
-            <div class="blogs-data">
-              <div class="blogs-posted">01 Jan 22</div>
-              <div class="blogs-comments">2</div>
+    <div class="container" id="principal">
+      <main class="principal-container">
+        <h2 class="second-title">Últimas Notícias</h2>
+        <div class="article-content">
+          <div class="latest-news">
+            <div class="views">
+              <div class="views-date">12 dec 12</div>
+              <div class="views-comments"><i class="fa-solid fa-comment"></i> 3</div>
             </div>
-            <div class="blogs-image">
-              <img src="/assets/images/dentist.jpg">
-            </div>
-            <div class="blogs-title">
-              O título da noticia vai aqui
-            </div>
-            <div class="blogs-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo veniam itaque, non nisi, distinctio
-              voluptatum rem et sapiente ex autem consequuntur nam minima aperiam est doloremque. Reprehenderit
-              quidem... Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad natus necessitatibus accusantium
-              dignissimos! Rerum assumenda minima porro fuga dignissimos cumque ratione nostrum dolorum cupiditate.
-              Libero praesentium totam aliquid omnis doloribus!
-            </div>
-          </section>
-          <section class="ultimas-noticias">
-            <div class="blogs-data">
-              <div class="blogs-posted">01 Jan 22</div>
-              <div class="blogs-comments">2</div>
-            </div>
-            <div class="blogs-image">
-              <img src="/assets/images/dentist.jpg">
-            </div>
-            <div class="blogs-title">
-              O título da noticia vai aqui
-            </div>
-            <div class="blogs-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo veniam itaque, non nisi, distinctio
-              voluptatum rem et sapiente ex autem consequuntur nam minima aperiam est doloremque. Reprehenderit
-              quidem...
-            </div>
-          </section>
-          <section class="ultimas-noticias">
-            <div class="blogs-data">
-              <div class="blogs-posted">01 Jan 22</div>
-              <div class="blogs-comments">2</div>
-            </div>
-            <div class="blogs-image">
-              <img src="/assets/images/dentist.jpg">
-            </div>
-            <div class="blogs-title">
-              O título da noticia vai aqui
-            </div>
-            <div class="blogs-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo veniam itaque, non nisi, distinctio
-              voluptatum rem et sapiente ex autem consequuntur nam minima aperiam est doloremque. Reprehenderit
-              quidem...
-            </div>
-          </section>
-          <section class="ultimas-noticias">
-            <div class="blogs-data">
-              <div class="blogs-posted">01 Jan 22</div>
-              <div class="blogs-comments">2</div>
-            </div>
-            <div class="blogs-image">
-              <img src="/assets/images/dentist.jpg">
-            </div>
-            <div class="blogs-title">
-              O título da noticia vai aqui
-            </div>
-            <div class="blogs-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo veniam itaque, non nisi, distinctio
-              voluptatum rem et sapiente ex autem consequuntur nam minima aperiam est doloremque. Reprehenderit
-              quidem...
-            </div>
-          </section>
-        </div>
-      </section>
-      <aside>
-        <div class="departamentos">
-          <div>
-            <h3>Departamentos</h3>
+            <a href="#">
+              <div class="image-decoration">
+                <img src="/05-projeto-dentista/assets/images/dentist.jpg" alt="">
+              </div>
+              <div class="notice-title">O título da Notícia vai aqui</div>
+              <div class="notice-text">
+                O texto ilustrativo da noticia vai aqui.. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Omnis non delectus accusamus, unde reiciendis recusandae nesciunt, tenetur voluptatum
+                saepe sequi deleniti maxime consectetur odio totam quam adipisci? Quos, excepturi recusandae.
+              </div>
+            </a>
           </div>
-          <div class="departamento-body">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div class="latest-news">
+            <div class="views">
+              <div class="views-date">12 dec 12</div>
+              <div class="views-comments"><i class="fa-solid fa-comment"></i> 3</div>
+            </div>
+            <a href="#">
+              <div class="image-decoration">
+                <img src="/05-projeto-dentista/assets/images/dentist2.jpg" alt="">
+              </div>
+              <div class="notice-title">O título da Notícia vai aqui</div>
+              <div class="notice-text">
+                O texto ilustrativo da noticia vai aqui.. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Omnis non delectus accusamus, unde reiciendis recusandae nesciunt, tenetur voluptatum.
+              </div>
+            </a>
+          </div>
+          <div class="latest-news">
+            <div class="views">
+              <div class="views-date">12 dec 12</div>
+              <div class="views-comments"><i class="fa-solid fa-comment"></i> 3</div>
+            </div>
+            <a href="#">
+              <div class="image-decoration">
+                <img src="/05-projeto-dentista/assets/images/dentist4.jpg" alt="">
+              </div>
+              <div class="notice-title">O título da Notícia vai aqui</div>
+              <div class="notice-text">
+                O texto ilustrativo da noticia vai aqui.. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Omnis non delectus accusamus, unde reiciendis recusandae nesciunt, tenetur voluptatum
+                saepe sequi deleniti maxime consectetur odio totam quam adipisci? Quos, excepturi recusandae.
+              </div>
+            </a>
+          </div>
+          <div class="latest-news">
+            <div class="views">
+              <div class="views-date">12 dec 12</div>
+              <div class="views-comments"><i class="fa-solid fa-comment"></i> 3</div>
+            </div>
+            <a href="#">
+              <div class="image-decoration">
+                <img src="/05-projeto-dentista/assets/images/dentist3.jpg" alt="">
+              </div>
+              <div class="notice-title">O título da Notícia vai aqui</div>
+              <div class="notice-text">
+                O texto ilustrativo da noticia vai aqui.. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Omnis non delectus accusamus, unde reiciendis recusandae nesciunt, tenetur voluptatum
+                saepe sequi deleniti maxime consectetur odio totam quam adipisci? Quos, excepturi recusandae.
+              </div>
+            </a>
           </div>
         </div>
-        <div class="apointment">
-          <h3>Faça um depoimento</h3>
+      </main>
+      <aside class="departaments">
+        <h2 class="second-title">Departamentos</h2>
+        <div class="other-notices">
+          <div class="other-new-1">Atenção Primária a Saúde </div>
+          <div class="other-new-1">Prevenção de Caries</div>
+          <div class="other-new-1">Próteses Dentárias</div>
+          <div class="other-new-1">Clareamento</div>
+          <div class="other-new-1">Dores de Dente</div>
+          <div class="other-new-1">Melhores Cremes Dentais</div>
+          <div class="other-new-1">Dentes do Siso</div>
+          <div class="other-new-1">Aparelhos</div>
+          <div class="other-new-1">Higiene Bucal</div>
+        </div>
+        <div class="contact">
+          <h2 class="second-title">Marque uma Consulta</h2>
+          <p class="contact-text">Você pode marcar uma consulta gratuita para fazer o seu orçamento. Tiramos todas as
+            suas dúvidas e te ajudamos no que precisar.</p>
+          <address>
+            <div class="contact-by">
+              <i class="fa-solid fa-phone"></i>
+              <p>
+                Telefone: (11) 98470-6542
+              </p>
+            </div>
+            <div class="contact-by">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <p>
+                E-mail: carlosrailsondev@gmail.com
+              </p>
+            </div>
+            <div class="contact-by">
+              <i class="fa-solid fa-rectangle-list"></i>
+              <p>
+                Contato pela <a href="#"> página de contato</a>
+              </p>
+            </div>
+          </address>
         </div>
       </aside>
     </div>
   </section>
-  <footer>
-    <div class="container">
-      <div class="footer-copy">
-        <span>Copyright &copy; - </span> Todos os direitos reservados <span>por</span> QuanticaLabs
-      </div>
-    </div>
-  </footer>
+  <script src="https://kit.fontawesome.com/5532b79580.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
