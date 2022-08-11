@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-size: 15px;
+  --title-size: 22px;
+  --spacing-geral: 20px;
+  --subtitle-size: 25px;
+  --menu-size: 14px;
+  --banner-title-h1: 40px;
+  --banner-title-p: 25px;
+  --bg-color-weak: #42b3e5;
+  --bg-color-medium: #0384ce;
+  --bg-color-strong: #3156a3;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,17 +61,17 @@ p {
   text-decoration: none;
   border-radius: 2px;
   color: #555;
-  font-size: 14px;
+  font-size: var(--menu-size);
 }
 
 .menu li a:hover,
 #active {
-  background-color: #42b3e5;
+  background-color: var(--bg-color-weak);
   color: #fff;
 }
 
 .banner {
-  background-image: url("/05-projeto-dentista/assets/images/dentista-capa.jpg");
+  background-image: url("/assets/images/dentista-capa.jpg");
   background-position: center;
   background-size: cover;
   height: 640px;
@@ -83,12 +96,12 @@ p {
 }
 
 .title h1 {
-  font-size: 50px;
+  font-size: var(--banner-title-h1);
   font-weight: normal;
 }
 
 .title p {
-  font-size: 24px;
+  font-size: var(--banner-title-p);
   line-height: 1.5;
   margin-top: 5px;
 }
@@ -107,27 +120,33 @@ p {
   justify-content: space-between;
   color: #fff;
   line-height: 1.2;
-  padding: 20px;
+  padding: var(--spacing-geral);
 }
 
-.info-content-1 {
-  background-color: #42b3e5;
+.info-content-1,
+.footer-infos-description-1 {
+  background-color: var(--bg-color-weak);
 }
 
-.info-content-2 {
-  background-color: #0384ce;
+.info-content-2,
+.footer-infos-description-2 {
+  background-color: var(--bg-color-medium);
 }
 
-.info-content-3 {
-  background-color: #3156a3;
+.info-content-3,
+.footer-infos-description-3 {
+  background-color: var(--bg-color-strong);
 }
 
-.info-description-title {
-  font-size: 20px;
+.info-description-title,
+.footer-infos span {
+  font-size: var(--title-size);
 }
 
-.info-description-text {
-  font-size: 15px;
+.info-description-text,
+.footer-infos p,
+.footer-important p {
+  font-size: var(--text-size);
 }
 
 .info-description-link {
@@ -146,6 +165,7 @@ p {
 .timetable {
   display: flex;
   flex-direction: column;
+  font-size: var(--text-size);
 }
 
 .timetable-description {
@@ -164,33 +184,37 @@ p {
 
 .principal-container {
   flex: 2;
+  margin-bottom: var(--spacing-geral);
 }
 
-.second-title {
-  margin: 20px 0;
+.second-title,
+.footer-link-title {
+  margin: var(--spacing-geral) 0;
   font-weight: normal;
+  font-size: var(--subtitle-size)
 }
 
-.second-title::after {
+.second-title::after,
+.footer-link-title:after {
   content: "";
   width: 50px;
   height: 4px;
   margin-top: 5px;
-  background-color: #42b3e5;
+  background-color: var(--bg-color-weak);
   display: block;
 }
 
 .article-content {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: var(--spacing-geral);
 }
 
 .latest-news {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding-right: 20px;
+  padding-right: var(--spacing-geral);
 }
 
 .latest-news a {
@@ -200,7 +224,8 @@ p {
 
 .views {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-geral);
+  font-size: var(--text-size);
 }
 
 .views-date,
@@ -211,11 +236,11 @@ p {
 }
 
 .views-date {
-  background-color: #3156a3;
+  background-color: var(--bg-color-strong);
 }
 
 .views-comments {
-  background-color: #42b3e5;
+  background-color: var(--bg-color-weak);
 }
 
 .image-decoration {
@@ -227,16 +252,17 @@ p {
 }
 
 .notice-title {
-  font-size: 25px;
+  margin-top: 10px;
+  font-size: var(--title-size);
 }
 
 .notice-text,
 .contact-text {
-  margin: 20px 0;
-  font-size: 15px;
+  margin: 10px 0;
+  font-size: var(--text-size);
   line-height: 1.2;
   color: #555;
-  padding-bottom: 20px;
+  padding-bottom: var(--spacing-geral);
 }
 
 /* area do código referente ao conteúdo aside ---------------------- */
@@ -246,9 +272,10 @@ p {
 }
 
 .other-notices {
-  padding-top: 20px;
+  padding-top: var(--spacing-geral);
   color: #555;
   margin-bottom: 50px;
+  font-size: var(--text-size);
 }
 
 .other-new-1 {
@@ -272,6 +299,7 @@ p {
   color: #555;
   display: flex;
   align-items: center;
+  font-size: var(--text-size);
 }
 
 .contact-by a {
@@ -280,7 +308,92 @@ p {
 
 .fa-phone,
 .fa-envelope-open-text,
-.fa-rectangle-list {
+.fa-rectangle-list,
+.fa-square-facebook,
+.fa-square-twitter,
+.fa-square-instagram,
+.fa-square-youtube {
   padding-right: 5px;
   font-size: 25px;
+  color: #555;
+}
+
+/* area footer abaixo ---------------------- */
+
+footer {
+  background-color: #202020;
+}
+
+.footer-infos {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.footer-infos p {
+  margin-top: 10px;
+  color: #fff;
+}
+.footer-infos-description-1,
+.footer-infos-description-2,
+.footer-infos-description-3 {
+  flex: 1;
+  padding: var(--spacing-geral);
+}
+
+.footer-links {
+  color: #fff;
+  margin-top: var(--spacing-geral);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-important {
+  flex: 1;
+  padding-right: var(--spacing-geral);
+}
+
+.footer-important p {
+  margin-bottom: var(--spacing-geral);
+  color: #555;
+}
+
+.footer-important a,
+.footer-copy a {
+  text-decoration: none;
+  color: #a2a2a2;
+}
+
+.footer-important a:hover,
+.footer-copy a:hover {
+  text-decoration: underline;
+}
+
+.footer-link-title {
+  padding: var(--spacing-geral) var(--spacing-geral) 0 0;
+}
+
+.footer-icons {
+  margin-top: var(--spacing-geral);
+}
+
+.footer-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-style: normal;
+}
+
+.footer-address p {
+  margin: 0;
+}
+
+.footer-copy {
+  padding: 10px 0;
+  border-top: 1px solid #555;
+}
+
+.footer-copy p {
+  color: #555;
+  font-size: var(--text-size);
 }
