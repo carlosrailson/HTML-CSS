@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Formulário de Pesquisa</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Carlos Railson">
+  <meta name="description" content="Formulário de pesquisa feito com HTML e CSS">
+  <meta name="keywords" content="formulário, de, pesquisa, html, css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-language" content="pt-br">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+  <form action="#" method="post">
+    <div class="my-form">
+      <div class="input-name">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+      </div>
+      <div class="input-email">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+      </div>
+      <div class="input-idade">
+        <label for="idade">Idade (Opcional)</label>
+        <input type="number" id="idade">
+      </div>
+      <div class="select-options">
+        <label for="option">Qual opcão te descreve melhor?</label>
+        <select name="escolha-uma-opcao" id="option">
+          <option value="valor1">Selecione uma opção</option>
+          <option value="valor2">Estudante</option>
+          <option value="valor3">Trabalhador Horário integral</option>
+          <option value="valor4">Trabalhador de meio período</option>
+          <option value="valor5">Prefiro não dizer</option>
+          <option value="valor6">Outro</option>
+        </select>
+      </div>
+      <div class="input-radio">
+        <label>Você nos recomendaria a um amigo?</label>
+        <div class="definitely">
+          <input type="radio" id="definitely" name="recomended">
+          <label for="definitely">Definitivamente</label>
+        </div>
+        <div class="maybe">
+          <input type="radio" id="maybe" name="recomended">
+          <label for="maybe">Talvez</label>
+        </div>
+        <div class="not-sure">
+          <input type="radio" id="not-sure" name="recomended">
+          <label for="not-sure">Não tenho certeza</label>
+        </div>
+      </div>
+      </label>
+    </div>
+  </form>
+</body>
+
+</html>

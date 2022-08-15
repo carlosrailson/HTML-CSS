@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.my-form {
+  background-color: rgb(36, 54, 73);
+  color: #fff;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.input-name input,
+.input-email input,
+.input-idade input,
+.select-options select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+  outline: none;
+  margin: 5px 0 20px 0;
+  color: #555;
+
+.select-options {
+  display: flex;
+  flex-direction: column;
+}
