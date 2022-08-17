@@ -14,49 +14,117 @@
 </head>
 
 <body>
-  <form action="#" method="post">
-    <div class="my-form">
-      <div class="input-name">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-      </div>
-      <div class="input-email">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email">
-      </div>
-      <div class="input-idade">
-        <label for="idade">Idade (Opcional)</label>
-        <input type="number" id="idade">
-      </div>
-      <div class="select-options">
-        <label for="option">Qual opcão te descreve melhor?</label>
-        <select name="escolha-uma-opcao" id="option">
-          <option value="valor1">Selecione uma opção</option>
-          <option value="valor2">Estudante</option>
-          <option value="valor3">Trabalhador Horário integral</option>
-          <option value="valor4">Trabalhador de meio período</option>
-          <option value="valor5">Prefiro não dizer</option>
-          <option value="valor6">Outro</option>
-        </select>
-      </div>
-      <div class="input-radio">
-        <label>Você nos recomendaria a um amigo?</label>
-        <div class="definitely">
-          <input type="radio" id="definitely" name="recomended">
-          <label for="definitely">Definitivamente</label>
-        </div>
-        <div class="maybe">
-          <input type="radio" id="maybe" name="recomended">
-          <label for="maybe">Talvez</label>
-        </div>
-        <div class="not-sure">
-          <input type="radio" id="not-sure" name="recomended">
-          <label for="not-sure">Não tenho certeza</label>
-        </div>
-      </div>
-      </label>
+  <main class="container">
+    <div class="title">
+      <h1>Formulário de Pesquisa</h1>
+      <!-- <h2>Um simples formulário para praticar HTML e CSS</h2> -->
     </div>
-  </form>
+    <div class="my-form">
+      <form action="#" method="post">
+        <div class="input-name">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome">
+        </div>
+        <div class="input-email">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email">
+        </div>
+        <div class="input-idade">
+          <label for="idade">Idade (Opcional)</label>
+          <input type="number" id="idade">
+        </div>
+
+        <div class="select-options">
+          <label for="option">Qual opcão te descreve melhor?</label>
+          <select name="escolha-uma-opcao" id="option">
+            <option value="valor1">Selecione uma opção</option>
+            <option value="valor2">Estudante</option>
+            <option value="valor3">Trabalhador Horário integral</option>
+            <option value="valor4">Trabalhador de meio período</option>
+            <option value="valor5">Prefiro não dizer</option>
+            <option value="valor6">Outro</option>
+          </select>
+        </div>
+
+        <div class="input-radio">
+          <label>Você nos recomendaria a um amigo?</label>
+          <div class="definitely">
+            <input type="radio" id="definitely" name="recomended">
+            <label for="definitely">Definitivamente</label>
+          </div>
+          <div class="maybe">
+            <input type="radio" id="maybe" name="recomended">
+            <label for="maybe">Talvez</label>
+          </div>
+          <div class="not-sure">
+            <input type="radio" id="not-sure" name="recomended">
+            <label for="not-sure">Não tenho certeza</label>
+          </div>
+        </div>
+
+        <div class="select-options">
+          <label for="second-label-option">O que você mais curte no nosso site?</label>
+          <select name="escolha-uma-opcao" id="second-label-option">
+            <option value="valor1">Selecione uma opção</option>
+            <option value="valor2">Desafios</option>
+            <option value="valor3">Projetos</option>
+            <option value="valor4">Comunidade</option>
+            <option value="valor5">Open Source</option>
+          </select>
+        </div>
+
+        <div class="ckeck">
+          <p>O que você gostaria de melhorar? (Escolha todas que se aplicam)</p>
+          <div>
+            <input type="checkbox" name="front-end" id="front-end">
+            <label for="front-end">Projetos de Front-End</label>
+          </div>
+          <div>
+            <input type="checkbox" name="back-end" id="back-end">
+            <label for="back-end">Projetos de Back-End</label>
+          </div>
+          <div>
+            <input type="checkbox" name="data-visualization" id="data-visualization">
+            <label for="data-visualization">Data Visualization</label>
+          </div>
+          <div>
+            <input type="checkbox" name="challenges" id="challenges">
+            <label for="challenges">Desafios</label>
+          </div>
+          <div>
+            <input type="checkbox" name="open-source" id="open-source">
+            <label for="open-source">Comunidade Open Source</label>
+          </div>
+          <div>
+            <input type="checkbox" name="videos" id="videos">
+            <label for="videos">Edição de Vídeos</label>
+          </div>
+          <div>
+            <input type="checkbox" name="wiki" id="wiki">
+            <label for="wiki">Wiki</label>
+          </div>
+          <div>
+            <input type="checkbox" name="forum" id="forum">
+            <label for="forum">Forum</label>
+          </div>
+          <div>
+            <input type="checkbox" name="courses" id="courses">
+            <label for="courses">Cursos Adicionais</label>
+          </div>
+        </div>
+
+        <div class="text-area">
+          <p>Algum comentário ou sujestão?</p>
+          <textarea name="text-area-message"></textarea>
+        </div>
+
+        <button>Enviar</button>
+      </form>
+    </div>
+  </main>
+  <footer class="container">
+    <p>Desenvolvido por <a href="https://github.com/carlosrailson" target="_blank">Carlos Railson</a></p>
+  </footer>
 </body>
 
 </html>
