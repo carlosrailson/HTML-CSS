@@ -7,7 +7,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
 }
 
@@ -81,5 +81,12 @@ header {
 .intro-description img {
   max-width: 300px;
   border: 3px solid #fff;
-  margin-top: 10px;
+  margin: 10px 20px 0 0;
+  float: left;
+}
+
+.intro-description p {
+  line-height: 1.5;
+  text-align: justify;
+  padding-top: 10px;
 }
