@@ -4,10 +4,12 @@ h2,
 h3,
 p,
 ul,
-li {
+li,
+a,
+figure {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #fff;
 }
 
@@ -46,30 +48,34 @@ header {
 }
 
 .menu li a {
-  padding: 5px 10px;
+  padding: 5px 0;
+  margin-left: 10px;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  transition: color 0.2s;
+  border-bottom: 2px solid #282828;
 }
 
 .menu li a:hover {
-  color: #005171;
-  text-decoration: underline;
+  color: #2c3e50;
+  border-bottom: 2px solid #fff;
 }
 
-.intro {
+.intro,
+.career {
   background-color: #2c3e50;
   padding: 50px 0;
 }
 
-.intro-content h1 {
+.intro-content h1,
+.career h2 {
   text-transform: uppercase;
   font-size: 30px;
 }
 
-.intro-content h1::after {
+.intro-content h1::after,
+.career h2::after {
   content: "";
   width: 50px;
   height: 3px;
@@ -79,14 +85,48 @@ header {
 }
 
 .intro-description img {
-  max-width: 300px;
+  max-width: 360px;
   border: 3px solid #fff;
-  margin: 10px 20px 0 0;
-  float: left;
+  /* float: left; */
 }
 
-.intro-description p {
+.intro-description figure {
+  float: left;
+  margin: 10px 30px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-description figcaption {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-color: #282828;
+  border: 3px solid #fff;
+  border-top: none;
+}
+
+.intro-description p,
+.career-description p {
   line-height: 1.5;
   text-align: justify;
   padding-top: 10px;
+}
+
+.career {
+  background-color: #f39c12;
+}
+
+.career-description figure {
+  float: right;
+  margin: 10px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.career-description img {
+  max-width: 360px;
+  border: 3px solid #fff;
 }
